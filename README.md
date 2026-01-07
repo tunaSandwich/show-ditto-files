@@ -43,16 +43,6 @@ Note: This code was written entirely before AI coding assistants. These files re
 
 ---
 
-## Highlights
-
-**ViewModel pattern for UI logic** — The MediaGrid component separates presentation from business logic using a ViewModel hook pattern. This allowed the same grid component to power both album creation and editing flows with different data sources and actions.
-
-**Geo-spatial friend ranking** — The drafts endpoint uses MySQL spatial functions (`ST_DISTANCE_SPHERE`, `MBRCONTAINS`) to find and rank nearby friends by distance tier, then cross-references their interests with event categories to suggest the most relevant invitees.
-
-**Composable Sequelize scopes** — The Hang model defines multiple query scopes (`complete`, `preview`, `listPreview`) that can be mixed and parameterized, avoiding query duplication while supporting different data shapes for different screens.
-
----
-
 ## Tech Stack
 
 **Mobile**
