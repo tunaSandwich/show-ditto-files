@@ -1,0 +1,111 @@
+import {StyleSheet} from 'react-native';
+import {windowWidth} from 'helpers/InterfaceHelper';
+import colors from 'constants/colors';
+
+export default StyleSheet.create({
+  container: {},
+  titleContainer: {
+    width: '100%',
+    paddingLeft: 12,
+    paddingRight: 12,
+    paddingTop: 20,
+    paddingBottom: 20,
+    backgroundColor: 'white',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+  rowContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  addButton: {
+    width: windowWidth / 3 - 1,
+    height: windowWidth / 3 - 1,
+    backgroundColor: colors.primary.darkMain,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'white',
+  },
+  plus: {
+    height: 30,
+    width: 30,
+  },
+  ghostPlaceholder: {
+    width: windowWidth / 3 - 1,
+    height: windowWidth / 3 - 1,
+    backgroundColor: colors.rare.gray5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'white',
+  },
+  gridContainer: {
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    borderWidth: 1,
+    borderColor: 'white',
+  },
+  highlightContainer: {
+    width: windowWidth / 3 - 1,
+    height: windowWidth / 3 - 1,
+    borderWidth: 1,
+    borderColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  playIconContainer: {
+    position: 'absolute',
+    zIndex: 3,
+    bottom: 8,
+    right: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  playIconOverlay: {
+    zIndex: 3,
+    height: 24,
+    width: 24,
+    backgroundColor: colors.neutral.gray70,
+    opacity: 0.3,
+    borderRadius: 100,
+  },
+  playIcon: {
+    position: 'absolute',
+    zIndex: 3,
+    height: 16,
+    width: 16,
+  },
+  highlight: {
+    height: '100%',
+    width: '100%',
+    position: 'absolute',
+    zIndex: 1,
+  },
+  overlay: {
+    position: 'absolute',
+    height: '100%',
+    width: '100%',
+    backgroundColor: colors.narwhalGrey,
+    opacity: 0.5,
+    zIndex: 2,
+  },
+  errorOverlay: {
+    backgroundColor: colors.error.darkestMain,
+    position: 'absolute',
+    height: '100%',
+    width: '100%',
+    opacity: 0.5,
+    zIndex: 2,
+  },
+  errorButtonText: {
+    textAlign: 'center',
+    zIndex: 3,
+  },
+  spin: {
+    zIndex: 3,
+  },
+});
